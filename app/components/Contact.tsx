@@ -33,9 +33,9 @@ const Contact = () => {
         "template_iqefklp",
         {
           from_name: form.name,
-          to_name: "Mark Laman",
+          to_name: "Liam Richard Lewis",
           from_email: form.email,
-          to_email: "reallaman97@gmail.com",
+          to_email: "liamricharddev7@gmail.com",
           message: form.message,
         },
         "7rOxb5ds5H79r2ndM"

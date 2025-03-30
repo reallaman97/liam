@@ -54,15 +54,13 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-[3xl] leading-[30px]"
       >
-        Dynamic and results-driven technology professional with over 8 years of
-        diverse experience in web and mobile application development. Adept at
-        leveraging cutting-edge technologies to build high-performance solutions
-        that enhance user experiences and drive business growth. Proficient in
-        both frontend and backend development, with a strong focus on code
-        quality, problem-solving, and optimizing processes. A passionate learner
-        committed to continuous improvement, and a collaborative team player
-        skilled in driving results through effective communication and
-        innovation
+        Experienced Software & Machine Learning Engineer with a demonstrated
+        history of working in the venture technology industry. Skilled in
+        application & API development, cloud technologies, AI. I have honed
+        discipline, teamwork, and resilience, qualities that strongly enhance my
+        academic pursuits. My journey, from developing efficient applications to
+        nurturing budding coders, reflects my commitment to excellence in both
+        technical and leadership spheres.
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
