@@ -74,7 +74,7 @@ const technologies = [
       "text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-lime-500",
   },
   {
-    name: "Angular",
+    name: "Vue",
     color:
       "text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-violet-500",
   },
