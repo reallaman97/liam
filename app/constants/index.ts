@@ -32,112 +32,204 @@ const services = [
   },
 ];
 
-const technologies = [
-  {
-    name: "Javascript",
-    color:
-      "text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500",
-  },
-  {
-    name: "Python",
-    color:
-      "text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-600",
-  },
-  {
-    name: "PHP",
-    color:
-      "text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500",
-  },
-  {
-    name: "C/C++/C#",
-    color:
-      "text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-green-500",
-  },
-  {
-    name: "AWS",
-    color:
-      "text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500",
-  },
-  {
-    color:
-      "text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-500",
-    name: "Next.JS",
-  },
-  {
-    name: "Django",
-    color:
-      "text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-fuchsia-500",
-  },
-  {
-    name: "PostgreSQL",
-    color:
-      "text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-lime-500",
-  },
-  {
-    name: "Vue",
-    color:
-      "text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-violet-500",
-  },
-  {
-    name: "Docker",
-    color:
-      "text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-600",
-  },
-  {
-    name: "GraphQL",
-    color:
-      "text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-red-500",
-  },
-  {
-    color:
-      "text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-emerald-500",
-    name: "Java",
-  },
-];
+// const technologies = [
+//   {
+//     name: "Javascript",
+//     color:
+//       "text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500",
+//   },
+//   {
+//     name: "Python",
+//     color:
+//       "text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-600",
+//   },
+//   {
+//     name: "PHP",
+//     color:
+//       "text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500",
+//   },
+//   {
+//     name: "C/C++/C#",
+//     color:
+//       "text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-green-500",
+//   },
+//   {
+//     name: "AWS",
+//     color:
+//       "text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500",
+//   },
+//   {
+//     color:
+//       "text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-500",
+//     name: "Next.JS",
+//   },
+//   {
+//     name: "Django",
+//     color:
+//       "text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-fuchsia-500",
+//   },
+//   {
+//     name: "PostgreSQL",
+//     color:
+//       "text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-lime-500",
+//   },
+//   {
+//     name: "Vue",
+//     color:
+//       "text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-violet-500",
+//   },
+//   {
+//     name: "Docker",
+//     color:
+//       "text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-600",
+//   },
+//   {
+//     name: "GraphQL",
+//     color:
+//       "text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-red-500",
+//   },
+//   {
+//     color:
+//       "text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-emerald-500",
+//     name: "Java",
+//   },
+// ];
+
+const skills = {
+  backend: [
+    "Node.js (TypeScript, JavaScript, Express.js)",
+    "Java (Spring Boot)",
+    "PHP (Laravel, CodeIgniter)",
+    "C# (ASP.NET)",
+    "Python (Django, Flask, FastAPI)",
+    "Go (Golang)",
+    "gRPC",
+    "NestJS",
+  ],
+  frontend: [
+    "React.js",
+    "Next.js",
+    "Angular",
+    "Vue.js",
+    "React Native",
+    "Tailwind CSS",
+    "MUI",
+    "JavaScript",
+    "HTML",
+    "CSS",
+  ],
+  cloud: [
+    "AWS (EC2, Lambda, S3, CloudWatch, ECS, Fargate)",
+    "Google Firebase",
+    "Azure DevOps",
+    "Docker",
+    "Kubernetes",
+    "Jenkins",
+    "GitHub Actions",
+    "CI/CD",
+    "Terraform",
+    "Helm",
+  ],
+  data: [
+    "PostgreSQL",
+    "MySQL",
+    "MongoDB",
+    "Redis",
+    "DynamoDB",
+    "CassandraDB",
+    "Elasticsearch",
+    "Snowflake",
+    "BigQuery",
+  ],
+  api: [
+    "REST APIs",
+    "GraphQL",
+    "gRPC",
+    "JWT/OAuth2 Authentication",
+    "WebSockets",
+    "OpenAPI",
+    "Swagger",
+  ],
+};
 
 const experiences = [
   {
-    title: "Frontend Developer",
-    company_name: "Chromedia Inc",
-    icon: "/company/chromedia.png",
+    title: "Senior Full Stack Engineer",
+    company_name: "HCLTech",
+    icon: "/company/hcltech.ico",
     iconBg: "#383E56",
-    date: "06/2017 -  04/2023",
+    date: "03/2022 -  03/2025",
     points: [
-      "As a young professional, I joined this Company as an eager apprentice. Here, I honed my skills under the guidance of seasoned mentors, immersing myself in the intricacies of Frontend Developer. In a very short time, I learned the best workings of the most complex products in existence.",
-      "Developed a user-friendly online learning platform with interactive course modules and assessments using React and Typescript.",
-      "Implemented a responsive design using Styled Components and MUI for consistent UI across devices using Storybook and Theme UI.",
-      "Collaborated with the backend team to integrate APIs and enhance data fetching and management using Node.js/AWS",
-      "Worked closely with UI/UX team to implement pixel-perfect and reusable components as well as implement animations and transitions using Framer Motion.",
+      "Project: AI-Driven Government Procurement & Bidding Platform",
+      "Engineered a scalable microservices architecture using Python (Django, FastAPI, Flask) for \
+government procurement workflows, achieving 99.99% uptime and processing 500+ daily \
+requests.",
+      "Built a GraphQL layer that allowed fine-grained queries over large sets of solicitation data and \
+agency documents, reducing over-fetching and boosting performance by 30%",
+      "Implemented WebSocket-based alerts for newly published opportunities, approaching deadlines, \
+and updates on proposal evaluations, providing users with instant, actionable insights",
+      "Centralized government contracting data by migrating 100,000+ records into MongoDB, and \
+automated real-time updates from government sources via Apache Kafka, ensuring the system \
+displayed the most current information.",
+      "Established role-based access control (RBAC) utilizing OAuth2 and JWT authentication protocols; \
+mitigated potential data breaches by 65% and ensured compliance with industry security \
+standards",
+      "Implemented rate limiting and API throttling using Redis, supporting 50+ client applications \
+concurrently while preventing denial-of-service attacks, improving overall system reliability and \
+availability.",
     ],
   },
   {
-    title: "Full Stack Developer",
-    company_name: "White Cloak Technologies, Inc",
-    icon: "/company/wc.png",
+    title: "Senior Software Engineer",
+    company_name: "Netflix, Inc.",
+    icon: "/company/nficon2023.ico",
     iconBg: "#E6DEDD",
-    date: "09/2019 - 02/2022",
+    date: "09/2018 - 02/2022",
     points: [
-      "Integrated payment systems such as Stripe, PayPal and Credit card processing, allowing users to securely process payments online. Implemented features such as subscription management, invoice generation and automated payment reminders",
-      "Created a serverless invoice management system using Node.js, AWS Lambda, SQS/SNS, S3, and DynamoDB. Integrated OCR to extract relevant data from invoices, enabling automated invoice processing and document management",
-      "Integrated the CRM system of the company with HubSpot, enabling seamless synchronization of customer data, lead generation, and marketing automation",
-      "Designed and developed mobile applications using React Native, providing a seamless experience for mobile users",
-      "Optimized frontend and backend performance through code splitting, caching,lazy loading and server-side rendering techniques",
+      "Project: Fintech Application",
+      "Pioneered high-throughput backend services in Java (Spring Boot) incorporating gRPC and\
+Apache Kafka, processing 5,000+ transactions per second while shrinking average latency to\
+85ms.",
+      "Optimized Java Spring Boot microservices, decreasing latency in critical transaction workflows\
+to an average of 85ms while handling peak loads of 7,000 transactions per second.",
+      "Integrated AWS Lambda serverless functions into application architecture, reducing\
+infrastructure costs by 30% and decreasing average function execution time by 50ms.",
+      "Integrated MongoDB and Oracle with read replicas for high-availability storage.",
+      "Engineered real-time dashboards within Splunk that visualized system performance, pinpointing\
+      bottlenecks, and improved incident response times by 40% while monitoring 50+ transaction\
+      pipelines.",
+      "Automated infrastructure provisioning with Terraform, reducing setup time by 60%.",
+      "Fortified system security by enforcing role-based access control across 5 key applications and\
+      enabled AES-256 encryption, exceeding regulatory requirements for financial data protection and\
+      compliance.",
+      "Spearheaded the creation of a fraud detection system using event sourcing that reduced false\
+      positives for customers flagged for fraud, decreasing manual review workload by 40 hours a week.",
     ],
   },
   {
-    title: "Full Stack Engineer",
-    company_name: "TeraVault Software",
-    icon: "/company/teravault.png",
+    title: "Software Developer",
+    company_name: "The Walt Disney",
+    icon: "/company/disney.png",
     iconBg: "#E6DEDD",
-    date: "03/2022 - 09/2024",
+    date: "06/2017 - 09/2018",
     points: [
-      "Led a talented team in creating state-of-the-art web applications using Next.JS/TypeScript",
-      "Spearheaded the migration of legacy systems to the cloud with AWS and Terraform, resulting in a 30% reduction in infrastructure costs and improved system reliability.",
-      "Automated repetitive tasks with Python scripts, allowing engineers to focus on more strategic initiatives.",
-      "Developed and deployed conversational AI chatbots powered by OpenAI's GPT models, enabling seamless interaction with users and providing personalized assistance in realtime",
-      "Streamlined DevOps processes with AWS Amplify, reducing deployment times by 40% and enhancing team productivity",
-      "Utilized the Elastic search engine and query to handle large DataSet for efficient search",
-      "Utilized Jira for project management, task tracking, and collaboration within agile teams including UX/UI designers and backend engineers. Ensured efficient workflow management and timely milestone delivery",
+      "Project: Microservices SaaS Dashboard",
+      "Accelerated core API enhancements with Node.js (NestJS) following senior engineer guidance;\
+elevated API test coverage scores by 40% and decreased server response times by 150ms, as\
+measured by Datadog",
+      "Fashioned responsive UIs with Tailwind CSS and React, resolving 80% of cross-browser\
+compatibility issues and boosting average page load speed by 40% on mobile devices.",
+      "Forged scalable data architecture using SQLite for local development environments and\
+Snowflake for analytical workloads, enabling 10+ engineers to conduct efficient data analysis and\
+reporting.",
+      "•Orchestrated microservice communication using Apache Kafka, achieving 99.99% uptime, and\
+enhanced application responsiveness by optimizing Redis cache invalidation policies during peak\
+traffic.",
+      "•Orchestrated infrastructure-as-code using Terraform, automating provisioning of 50+ virtual\
+machines, and slashing deployment times by 60%, while ensuring adherence to security protocols\
+and infrastructure compliance.",
+      "Actively influenced in code reviews with senior developers and contributed to documentation and\
+best practice sharing sessions.",
     ],
   },
 ];
@@ -149,7 +241,7 @@ const testimonials = [
       "LinkedIn is a business and employment-focused social media platform that works through websites and mobile apps.",
     name: "Liam Richard Lewis",
     image: "/socialmedia/linkedin.svg",
-    link: "https://www.linkedin.com/in/mark-francis-laman-686503350",
+    link: "https://www.linkedin.com/in/liam-lewis-a724ba328/",
   },
 ];
 
@@ -283,4 +375,4 @@ const projects: {
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, skills, experiences, testimonials, projects };
