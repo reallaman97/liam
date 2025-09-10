@@ -97,12 +97,12 @@ const services = [
 
 const skills = {
   backend: [
-    "Node.js (TypeScript, JavaScript, Express.js)",
-    "Java (Spring Boot)",
-    "PHP (Laravel, CodeIgniter)",
-    "C# (ASP.NET)",
     "Python (Django, Flask, FastAPI)",
+    "Java (Spring Boot)",
     "Go (Golang)",
+    "C# (ASP.NET)",
+    "Node.js (TypeScript, JavaScript, Express.js)",
+    "PHP (Laravel, CodeIgniter)",
     "gRPC",
     "NestJS",
   ],
@@ -158,25 +158,24 @@ const experiences = [
     company_name: "Apple",
     icon: "/company/apple.ico",
     iconBg: "#383E56",
-    date: "03/2022 -  03/2025",
+    date: "10/2024 - Present",
     points: [
-      "Project: AI-Driven Government Procurement & Bidding Platform",
-      "Engineered a scalable microservices architecture using Python (Django, FastAPI, Flask) for \
-government procurement workflows, achieving 99.99% uptime and processing 500+ daily \
-requests.",
-      "Built a GraphQL layer that allowed fine-grained queries over large sets of solicitation data and \
-agency documents, reducing over-fetching and boosting performance by 30%",
-      "Implemented WebSocket-based alerts for newly published opportunities, approaching deadlines, \
-and updates on proposal evaluations, providing users with instant, actionable insights",
-      "Centralized government contracting data by migrating 100,000+ records into MongoDB, and \
-automated real-time updates from government sources via Apache Kafka, ensuring the system \
-displayed the most current information.",
-      "Established role-based access control (RBAC) utilizing OAuth2 and JWT authentication protocols; \
-mitigated potential data breaches by 65% and ensured compliance with industry security \
-standards",
-      "Implemented rate limiting and API throttling using Redis, supporting 50+ client applications \
-concurrently while preventing denial-of-service attacks, improving overall system reliability and \
-availability.",
+      "Contributed to the backend of Apple’s internal ML Hub, a shared platform that allows \
+teams to store datasets, track experiments, version models, and deploy them at scale.",
+      "Built and maintained core Go microservices (Workflow, Model Repository, Experiment \
+Tracking, etc.) to standardize ML workflows across teams.",
+      "Designed GraphQL APIs for ease of use, with gRPC for service-to-service \
+communication, enabling seamless access to models and datasets.",
+      "Orchestrated large-scale ML workflows with Temporal.io for retries and Argo \
+Workflows on Kubernetes to manage training/evaluation pipelines.",
+      "Managed versioned models and datasets in PostgreSQL, stored artifacts in S3, and \
+used Kafka for real-time event streaming across tools.",
+      "Integrated Apple Directory for RBAC and approval workflows to ensure secure, \
+compliant access to models and data.",
+      "Tracked model deployments with Deploy Track (using Temporal and Kafka) for \
+version control and health reporting.",
+"Deployed infrastructure using Pulumi (Python) and Docker, automating multi-env \
+rollouts and CI/CD pipelines in Amazon EKS.",
     ],
   },
   {
@@ -184,26 +183,22 @@ availability.",
     company_name: "Capital One.",
     icon: "/company/capitalone.ico",
     iconBg: "#E6DEDD",
-    date: "09/2018 - 02/2022",
+    date: "11/2017 - 09/2024",
     points: [
       "Project: Fintech Application",
-      "Pioneered high-throughput backend services in Java (Spring Boot) incorporating gRPC and\
-Apache Kafka, processing 5,000+ transactions per second while shrinking average latency to\
-85ms.",
-      "Optimized Java Spring Boot microservices, decreasing latency in critical transaction workflows\
-to an average of 85ms while handling peak loads of 7,000 transactions per second.",
-      "Integrated AWS Lambda serverless functions into application architecture, reducing\
-infrastructure costs by 30% and decreasing average function execution time by 50ms.",
-      "Integrated MongoDB and Oracle with read replicas for high-availability storage.",
-      "Engineered real-time dashboards within Splunk that visualized system performance, pinpointing\
-      bottlenecks, and improved incident response times by 40% while monitoring 50+ transaction\
-      pipelines.",
-      "Automated infrastructure provisioning with Terraform, reducing setup time by 60%.",
-      "Fortified system security by enforcing role-based access control across 5 key applications and\
-      enabled AES-256 encryption, exceeding regulatory requirements for financial data protection and\
-      compliance.",
-      "Spearheaded the creation of a fraud detection system using event sourcing that reduced false\
-      positives for customers flagged for fraud, decreasing manual review workload by 40 hours a week.",
+      "Built and maintained Java (Spring Boot) services on AWS that process card \
+authorizations in real time; tuned connection pools, caching, and SQL to keep p99 \
+latency low",
+      "Stored hot state in Redis and Amazon RDS (PostgreSQL); streamed transaction events \
+with Kafka (and SQS for simpler queues) to feed fraud checks and reporting.",
+      "Reduced PCI scope by adding tokenization and OAuth2/JWT; protected keys with AWS \
+KMS; monitored security and performance with CloudWatch and Datadog.",
+      "Added a Python (FastAPI) service that computes fraud features like velocity and device \
+signals; cached results in Redis to avoid repeated work during spikes",
+      "Protected the system with rate limits, basic circuit breakers, and timeouts; ran k6 and \
+Gatling performance tests and small chaos drills to verify failover",
+      "Published partner REST APIs behind API Gateway with idempotency keys, clear error \
+codes, and plan-based throttling so integrators can retry safely.",
     ],
   },
   {
@@ -211,25 +206,22 @@ infrastructure costs by 30% and decreasing average function execution time by 50
     company_name: "Ansys",
     icon: "/company/ansys.ico",
     iconBg: "#E6DEDD",
-    date: "06/2017 - 09/2018",
+    date: "06/2012 - 10/2017",
     points: [
-      "Project: Microservices SaaS Dashboard",
-      "Accelerated core API enhancements with Node.js (NestJS) following senior engineer guidance;\
-elevated API test coverage scores by 40% and decreased server response times by 150ms, as\
-measured by Datadog",
-      "Fashioned responsive UIs with Tailwind CSS and React, resolving 80% of cross-browser\
-compatibility issues and boosting average page load speed by 40% on mobile devices.",
-      "Forged scalable data architecture using SQLite for local development environments and\
-Snowflake for analytical workloads, enabling 10+ engineers to conduct efficient data analysis and\
-reporting.",
-      "•Orchestrated microservice communication using Apache Kafka, achieving 99.99% uptime, and\
-enhanced application responsiveness by optimizing Redis cache invalidation policies during peak\
-traffic.",
-      "•Orchestrated infrastructure-as-code using Terraform, automating provisioning of 50+ virtual\
-machines, and slashing deployment times by 60%, while ensuring adherence to security protocols\
-and infrastructure compliance.",
-      "Actively influenced in code reviews with senior developers and contributed to documentation and\
-best practice sharing sessions.",
+      "Developed a B2B E-commerce platform that enables customers to quickly purchase Ansys \
+software, add cloud credits, and activate licenses, streamlining the buying process.",
+      "Built a multi-tenant store and subscription system for Ansys software licenses and cloud \
+credits using Node.js, Ruby and other frameworks with REST and GraphQL APIs.",
+      "Modeled orders, subscriptions, usage, and entitlements in PostgreSQL; used Redis for \
+carts, sessions, and rate limits; added fast catalog search with OpenSearch/Elasticsearch",
+      "Connected Stripe/Adyen and Avalara; handled webhooks with retries and \
+idempotency so purchases and renewals always finished cleanly.",
+      "Wrote a provisioning service that, after payment, activates licenses and credit packs via internal licensing APIs; added SSO (OIDC/SAML) and RBAC so company admins \
+can assign seats safely.",
+      "Used Kafka (and RabbitMQ where simpler) for background jobs like invoices, credit \
+top-ups, and email notifications; exposed a simple status API for support and ops",
+      "Shipped with Docker on Azure AKS; infra managed with Terraform; CI/CD in GitHub \
+Actions; secrets in Azure Key Vault",
     ],
   },
 ];
@@ -258,7 +250,7 @@ const projects: {
   platform: "Netlify" | "Vercel" | "Figma" | "Wordpress" | "Web";
 }[] = [
   {
-    name: "HeathTap",
+    name: "HealthTap",
     description:
       "Developed a visually appealing and user-friendly website using React.",
     tags: [
