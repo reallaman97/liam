@@ -155,8 +155,8 @@ const skills = {
 const experiences = [
   {
     title: "Senior Full Stack Engineer",
-    company_name: "HCLTech",
-    icon: "/company/hcltech.ico",
+    company_name: "Apple",
+    icon: "/company/apple.ico",
     iconBg: "#383E56",
     date: "03/2022 -  03/2025",
     points: [
@@ -181,8 +181,8 @@ availability.",
   },
   {
     title: "Senior Software Engineer",
-    company_name: "Netflix, Inc.",
-    icon: "/company/nficon2023.ico",
+    company_name: "Capital One.",
+    icon: "/company/capitalone.ico",
     iconBg: "#E6DEDD",
     date: "09/2018 - 02/2022",
     points: [
@@ -208,8 +208,8 @@ infrastructure costs by 30% and decreasing average function execution time by 50
   },
   {
     title: "Software Developer",
-    company_name: "The Walt Disney",
-    icon: "/company/disney.png",
+    company_name: "Ansys",
+    icon: "/company/ansys.ico",
     iconBg: "#E6DEDD",
     date: "06/2017 - 09/2018",
     points: [
